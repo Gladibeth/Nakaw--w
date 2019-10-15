@@ -1,0 +1,30 @@
+// Medias querys
+$breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
+  'sm': "(min-width: 768px) and (max-width: 991px)",
+  'md': "(min-width: 992px) and (max-width: 1199px)",
+  'lg': "(min-width: 1200px) and (max-width: 1600px)",
+  'xl': "(min-width: 1601px) and (max-width: 2048px)",
+) !default;
+
+// Fonts
+$Poppins: 'Poppins',
+sans-serif;
+$Open: 'Open Sans',
+sans-serif;
+
+// General
+$white: #fff;
+$black: #000;
+$nakawe: #86c28f;
+$violet: #f07b95;
+$contact: #333;
+$orange:#f7b18a;
+$mora: #b88caf;
+
+
+// Slick
+$arrow-color: #f50000;
+$arrow-size: 25px;
+$dots-color: gray;
+$dots-color-active: #00b050;
+$dots-size: 12px;

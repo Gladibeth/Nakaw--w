@@ -1,0 +1,91 @@
+.btn_custom {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 0;
+  font-weight: 600;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0px;
+  -webkit-transition: color .2s ease-in-out,
+    background-color .2s ease-in-out,
+    border-color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out,
+    background-color .2s ease-in-out,
+    border-color .2s ease-in-out;
+  transition: color .2s ease-in-out,
+    background-color .2s ease-in-out,
+    border-color .2s ease-in-out;
+  padding: 13px 50px;
+  cursor: pointer;
+  font-family: $Poppins;
+  border-radius: 5px;
+}
+
+.btn-search {
+  padding: 10px 14px;
+}
+
+.btn--small {
+  padding: 8px 12px;
+  min-width: 65px;
+  font-size: 12px;
+}
+
+.btn--medium {
+  padding: 10px 55px;
+  min-width: 85px;
+  font-size: 14px;
+}
+
+.btn--large {
+  padding: 12px 16px;
+  min-width: 105px;
+  font-size: 18px;
+}
+
+.btn--filled {
+  color: $nakawe;
+  background-color: transparent;
+  border: 1px solid $nakawe;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $nakawe;
+    color: $white;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.btn--full {
+  background-color: $nakawe !important;
+  color: $white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    color: $nakawe;
+    background-color: transparent !important;
+    border: 1px solid $nakawe;
+
+  }
+}
+
+.btn-box {
+  margin-top: 15px;
+  text-align: left;
+
+  @include respond-to(xs) {
+    text-align: center;
+  }
+}
+
+button {
+  border: 0px;
+}

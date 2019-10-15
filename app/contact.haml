@@ -1,0 +1,102 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Nakawé Joyeria Artesanal y  Accesorios
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    / Favicons
+    %link{:href => "assets/img/favicon.ico", :rel => "shortcut icon"}/
+  %body
+    %section.main-general
+      .main-general__content
+        .main-general__item
+          %aside.main-general__sidebar
+            .main-general__menu
+              %a.navbar-brand{:href => "index.html"} Nakawé
+              %nav.item-menu
+                %ul.nav.flex-column
+                  %li.nav-item
+                    %a.nav-link.active{:href => "product.html"} Productos
+                  %li.nav-item
+                    %a.nav-link{:href => "about.html"} Quiénes somos
+                  %li.nav-item
+                    %a.nav-link{:href => "contact.html"} Contacto
+                  
+            .main-general__social
+              .box-social
+                %span.title-social Síguenos en nuestras
+                %span.title-social redes sociales
+                .social
+                  %a.link-social{:href => "", :target => "_blank", :title => "Síguenos"}
+                    %span.logo-social
+                      %i.fa.fa-instagram.fa-social.fa-lg{"aria-hidden" => "true"}>
+                      Nakaweaccesorios
+                  %a.link-social{:href => "", :target => "_blank", :title => "Síguenos"}
+                    %span.logo-social
+                      %i.fa.fa-facebook.fa-social.fa-lg.fix-icon{"aria-hidden" => "true"}>
+                      Nakaweaccesorios
+                .line-credits
+                .box-credits
+                  %span.credits Copyright © 2019 - Nawawe Accesorios.
+                  %span.credits Todos los Derechos Reservados.
+                  %p.credits
+                    Powered by
+                    %a.copy__company{:href => "https://slicegroup.xyz", :target => "_blank", :title => "Slice Group"} Contact Marketing            
+
+        .main-general__item
+          .main-general__box
+            .main-search__top
+              %form#search-input.input-group{}
+                %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                %input.form-control.form-search{:name => "", :placeholder => "Búsqueda", :type => "text"}/
+                %span.input-group-btn
+                  %button.btn.btn-default.btn-search{:type => "submit"}
+                    %i.fa.fa-search.fa-search-fix{"aria-hidden" => "true"}
+            .main-contact__content
+              .main-contact__item
+                .main-general__title
+                  %p
+                    Contáctanos
+                %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15628.258021000878!2d-70.1812901!3d11.689841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1571087935558!5m2!1ses-419!2sve", :style => "border:0;", :width => "600"}
+
+                -# .main-contact__box
+                -#   .main-contact__description
+                -#     %strong Horario de atención
+                -#   .main-contact__description
+                -#     %strong Correo
+                -#   .main-contact__description
+                -#     %strong Ubicación
+
+
+              .main-contact__item
+                
+                .main-contact__form
+                  .main-footer__form
+                    %form
+                      .form-group
+                        %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+                      .form-group
+                        %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+                      -#   %input#formGroupExampleInput2.form-control{:placeholder => "Empresa", :type => "text"}/
+                      .form-group
+                        %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+                      .form-group
+                        %textarea{:placeholder => "Mensaje",:rows => "8"}
+                      .float-right.btn-box
+                        %button.btn_custom.btn--medium.btn--filled
+                          Enviar
+
+
+
+            
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}

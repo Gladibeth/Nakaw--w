@@ -1,0 +1,85 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Nakawe accesorios
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    / Favicons
+    %link{:href => "assets/img/favicon.ico", :rel => "shortcut icon"}/
+  %body
+    %section.main-general
+      .main-general__content
+        .main-general__item
+          %aside.main-general__sidebar
+            .main-general__menu
+              %a.navbar-brand{:href => "index.html"} Nakawé
+              %nav.item-menu
+                %ul.nav.flex-column
+                  %li.nav-item
+                    %a.nav-link.active{:href => "product.html"} Productos
+                  %li.nav-item
+                    %a.nav-link{:href => "about.html"} Quiénes somos
+                  %li.nav-item
+                    %a.nav-link{:href => "contact.html"} Contacto
+                  
+            .main-general__social
+              .box-social
+                %span.title-social Síguenos en nuestras
+                %span.title-social redes sociales
+                .social
+                  %a.link-social{:href => "", :target => "_blank", :title => "Síguenos"}
+                    %span.logo-social
+                      %i.fa.fa-instagram.fa-social.fa-lg{"aria-hidden" => "true"}>
+                      Nakaweaccesorios
+                  %a.link-social{:href => "", :target => "_blank", :title => "Síguenos"}
+                    %span.logo-social
+                      %i.fa.fa-facebook.fa-social.fa-lg.fix-icon{"aria-hidden" => "true"}>
+                      Nakaweaccesorios
+                .line-credits
+                .box-credits
+                  %span.credits Copyright © 2019 - Nawawe Accesorios.
+                  %span.credits Todos los Derechos Reservados.
+                  %p.credits
+                    Powered by
+                    %a.copy__company{:href => "https://slicegroup.xyz", :target => "_blank", :title => "Slice Group"} Contact Marketing            
+
+        .main-general__item
+          .main-general__box
+            .main-search__top
+              %form#search-input.input-group{}
+                %input{:name => "utf8", :type => "hidden", :value => "✓"}/
+                %input.form-control.form-search{:name => "", :placeholder => "Búsqueda", :type => "text"}/
+                %span.input-group-btn
+                  %button.btn.btn-default.btn-search{:type => "submit"}
+                    %i.fa.fa-search.fa-search-fix{"aria-hidden" => "true"}
+
+            .main-banner
+              .main-banner__content
+                .main-banner__item
+                  .mask
+                    .main-banner__text
+                      .main-banner__title
+                        %p Nakawé Joyería Artesanal y  Accesorios
+                    
+                  .main-banner__img
+                    %img{ :src => "https://images.unsplash.com/photo-1450297166380-cabe503887e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=745&q=80"}/
+                .main-banner__item
+                  .mask
+                    .main-banner__text
+                      .main-banner__title
+                        %p Nakawé Joyería Artesanal y  Accesorios
+                    
+                  .main-banner__img
+                    %img{ :src => "https://images.unsplash.com/photo-1510074229140-bdfc2ff28550?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"}/
+      
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
