@@ -107,14 +107,64 @@
   }
 }
 
-.main-client__content {
+.slider-nav {
+  .slick-prev {
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 55%;
+    left: -10%;
+    background-color: transparent;
+    // border: 1px solid rgba(255, 255, 255, .5);
+    width: 65px;
+    height: 64px;
+
+    &:before {
+      font-size: $arrow-size;
+      color: $nakawe;
+      content: "\f053";
+      font-family: 'FontAwesome';
+      z-index: 3;
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: $white;
+    }
+  }
+
+  .slick-next {
+    right: -10%;
+    z-index: 2;
+    height: 40px;
+    width: 40px;
+    top: 55%;
+    background-color: transparent;
+    // border: 1px solid rgba(255, 255, 255, .5);
+    width: 65px;
+    height: 64px;
+
+    &:before {
+      font-size: $arrow-size;
+      color: $nakawe;
+      content: "\f054";
+      font-family: 'FontAwesome';
+    }
+
+    &:hover {
+      outline: none;
+      background: transparent;
+      color: $white;
+    }
+  }
 
   .slick-dots {
     z-index: 2;
     display: flex;
     position: absolute;
     bottom: -30%;
-    right: 55%;
+    right: 65%;
     width: 0%;
 
     @include respond-to(md) {

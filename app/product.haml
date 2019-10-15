@@ -21,6 +21,8 @@
               %nav.item-menu
                 %ul.nav.flex-column
                   %li.nav-item
+                    %a.nav-link{:href => "index.html"} Inicio
+                  %li.nav-item
                     %a.nav-link.active{:href => "product.html"} Productos
                   %li.nav-item
                     %a.nav-link{:href => "about.html"} Quiénes somos
@@ -58,24 +60,118 @@
                   %button.btn.btn-default.btn-search{:type => "submit"}
                     %i.fa.fa-search.fa-search-fix{"aria-hidden" => "true"}
 
-            .main-banner
-              .main-banner__content
-                .main-banner__item
-                  .mask
-                    .main-banner__text
-                      .main-banner__title
-                        %p Nakawé Joyeria Artesanal y  Accesorios
-                    
-                  .main-banner__img
-                    %img{ :src => "https://images.unsplash.com/photo-1450297166380-cabe503887e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=745&q=80"}/
-                .main-banner__item
-                  .mask
-                    .main-banner__text
-                      .main-banner__title
-                        %p Nakawé Joyeria Artesanal y  Accesorios
-                    
-                  .main-banner__img
-                    %img{ :src => "https://images.unsplash.com/photo-1510074229140-bdfc2ff28550?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"}/
+            .main-product
+              .main-product__content
+                .main-product__filter
+                  #v-pills-tab.nav.flex-column.nav-pills{"aria-orientation" => "vertical", :role => "tablist"}
+                    %a#v-pills-home-tab.active{"aria-controls" => "v-pills-home", "aria-selected" => "true", "data-toggle" => "pill", :href => "#v-pills-home", :role => "tab"} Anillos
+                    %a#v-pills-profile-tab{"aria-controls" => "v-pills-profile", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-profile", :role => "tab"} Collares
+                    %a#v-pills-messages-tab{"aria-controls" => "v-pills-messages", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-messages", :role => "tab"} Aretes
+                    %a#v-pills-settings-tab{"aria-controls" => "v-pills-settings", "aria-selected" => "false", "data-toggle" => "pill", :href => "#v-pills-settings", :role => "tab"} Pulseras
+                #v-pills-tabContent.tab-content
+                  #v-pills-home.tab-pane.fade.show.active{"aria-labelledby" => "v-pills-home-tab", :role => "tabpanel"}
+                    .main-product__box
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1552234914-13f6e51124ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Anillos
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Anillos
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1530189955154-fb007ea08a76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Anillos
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1518954588695-59b8deeb40b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Anillos
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1501461342471-13e68faa90a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Anillos
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1466684921455-ee202d43c1aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Anillos
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+
+                  #v-pills-profile.tab-pane.fade{"aria-labelledby" => "v-pills-profile-tab", :role => "tabpanel"}
+                    .main-product__box
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1547738238-5ddb16bef15f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Collares
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                  #v-pills-messages.tab-pane.fade{"aria-labelledby" => "v-pills-messages-tab", :role => "tabpanel"}
+                    .main-product__box
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1475179593777-bd12fd56b85d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Aretes
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                      
+                  #v-pills-settings.tab-pane.fade{"aria-labelledby" => "v-pills-settings-tab", :role => "tabpanel"}
+                    .main-product__box
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1552234914-13f6e51124ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Pulseras
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+                      .main-product__item
+                        .card-product
+                          %img.img-product{:alt => "", :src => "https://images.unsplash.com/photo-1547738238-5ddb16bef15f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"}/
+                          .body-product
+                            %h2.title-product Pulseras
+                            .description-product
+                              %p
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut saepe corporis quas inventore doloremque aut, ducimus vero expedita nisi distinctio dolorem veniam iusto perspiciatis, libero delectus quaerat eaque assumenda?
+                            %a.btn.btn_custom.btn--medium.btn--filled{:href => "details_product.html"} Ver Más
+
+                
+
       
 
     %script{src: "assets/js/jquery.min.js"}
