@@ -20,6 +20,7 @@ $(".hamburger").on("click", function () {
     $(this).addClass("is-active");
     $('.main-general__sidebar').addClass('active-sidebar')
     $('.hamburger-inner').addClass('js-hamburger');
+    $('.input-group').addClass('input-group-xs');
 
 
 
@@ -27,7 +28,7 @@ $(".hamburger").on("click", function () {
     $(this).removeClass("is-active")
     $('.main-general__sidebar').removeClass('active-sidebar')
     $('.hamburger-inner').removeClass('js-hamburger');
-
+    $('.input-group').removeClass('input-group-xs');
   }
 });
 
