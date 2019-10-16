@@ -53,6 +53,10 @@
         .main-general__item
           .main-general__box
             .main-search__top
+              .btn-menu.d-lg-none.d-sm-block
+                %button#hamburger.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
+                  %span.hamburger-box
+                    %span.hamburger-inner
               %form#search-input.input-group{}
                 %input{:name => "utf8", :type => "hidden", :value => "✓"}/
                 %input.form-control.form-search{:name => "", :placeholder => "Búsqueda", :type => "text"}/

@@ -53,6 +53,10 @@
         .main-general__item
           .main-general__box
             .main-search__top
+              .btn-menu.d-lg-none.d-sm-block
+                %button#hamburger.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
+                  %span.hamburger-box
+                    %span.hamburger-inner
               %form#search-input.input-group{}
                 %input{:name => "utf8", :type => "hidden", :value => "✓"}/
                 %input.form-control.form-search{:name => "", :placeholder => "Búsqueda", :type => "text"}/
@@ -64,17 +68,22 @@
                 .main-general__title
                   %p
                     Contáctanos
-                %iframe{:allowfullscreen => "", :frameborder => "0", :height => "450", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15628.258021000878!2d-70.1812901!3d11.689841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1571087935558!5m2!1ses-419!2sve", :style => "border:0;", :width => "600"}
-
-                -# .main-contact__box
-                -#   .main-contact__description
-                -#     %strong Horario de atención
-                -#   .main-contact__description
-                -#     %strong Correo
-                -#   .main-contact__description
-                -#     %strong Ubicación
-
-
+                .main-contact__form.d-lg-none.d-md-none
+                  .main-footer__form
+                    %form
+                      .form-group
+                        %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+                      .form-group
+                        %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+                      -#   %input#formGroupExampleInput2.form-control{:placeholder => "Empresa", :type => "text"}/
+                      .form-group
+                        %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+                      .form-group
+                        %textarea{:placeholder => "Mensaje",:rows => "8"}
+                      .float-right.btn-box
+                        %button.btn_custom.btn--medium.btn--filled
+                          Enviar
+                %iframe.maps{:allowfullscreen => "", :frameborder => "0", :src => "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15628.258021000878!2d-70.1812901!3d11.689841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sve!4v1571087935558!5m2!1ses-419!2sve", :style => "border:0;"}
               .main-contact__item
                 
                 .main-contact__form

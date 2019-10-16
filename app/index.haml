@@ -21,13 +21,13 @@
               %nav.item-menu
                 %ul.nav.flex-column
                   %li.nav-item
-                    %a.nav-link.active{:href => "index.html"} Inicio
+                    %a.nav-link.nav-link-p.active{:href => "index.html"} Inicio
                   %li.nav-item
-                    %a.nav-link{:href => "product.html"} Productos
+                    %a.nav-link.nav-link-p{:href => "product.html"} Productos
                   %li.nav-item
-                    %a.nav-link{:href => "about.html"} Quiénes somos
+                    %a.nav-link.nav-link-p{:href => "about.html"} Quiénes somos
                   %li.nav-item
-                    %a.nav-link{:href => "contact.html"} Contacto
+                    %a.nav-link.nav-link-p{:href => "contact.html"} Contacto
                   
             .main-general__social
               .box-social
@@ -53,6 +53,10 @@
         .main-general__item
           .main-general__box
             .main-search__top
+              .btn-menu.d-lg-none.d-sm-block
+                %button#hamburger.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
+                  %span.hamburger-box
+                    %span.hamburger-inner
               %form#search-input.input-group{}
                 %input{:name => "utf8", :type => "hidden", :value => "✓"}/
                 %input.form-control.form-search{:name => "", :placeholder => "Búsqueda", :type => "text"}/
