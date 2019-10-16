@@ -17,7 +17,7 @@
         .main-general__item
           %aside.main-general__sidebar
             .main-general__menu
-              %a.navbar-brand{:href => "index.html"} Nakawé
+              %a.navbar-brand.d-none.d-md-block{:href => "index.html"} Nakawé
               %nav.item-menu
                 %ul.nav.flex-column
                   %li.nav-item
@@ -57,7 +57,9 @@
                 %button#hamburger.border-0.hamburger.hamburger--elastic{"data-toggle" => "offcanvas", :type => "button"}
                   %span.hamburger-box
                     %span.hamburger-inner
-              %form#search-input.input-group{}
+                .float-right
+                  %a.navbar-brand.navbar-brand-xs.d-md-none{:href => "index.html"} Nakawé
+              %form#search-input.input-group
                 %input{:name => "utf8", :type => "hidden", :value => "✓"}/
                 %input.form-control.form-search{:name => "", :placeholder => "Búsqueda", :type => "text"}/
                 %span.input-group-btn
