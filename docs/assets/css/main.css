@@ -543,6 +543,13 @@ body {
   color: #fff;
   font-family: "Poppins", sans-serif;
   margin-right: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  font-weight: 700;
+  color: #fff;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar-brand.navbar-brand-xs {

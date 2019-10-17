@@ -38,6 +38,13 @@
   color: $white;
   font-family: $Poppins;
   margin-right: 0;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    font-weight: 700;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
 
   &.navbar-brand-xs {
     color: $nakawe;
