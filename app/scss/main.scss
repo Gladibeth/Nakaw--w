@@ -234,6 +234,7 @@
   line-height: 1.6;
   font-weight: 700;
   font-family: $Poppins;
+  display: none;
 
   @include respond-to(md) {
     font-size: 14px;
@@ -298,7 +299,7 @@
   p {
     color: $white;
     font-family: $Poppins;
-    font-size: 18px;
+    font-size: 12px;
 
     @include respond-to(md) {
       font-size: 14px;
@@ -319,7 +320,7 @@
   transition: 0.3s ease-in-out;
   font-weight: 900;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
 
   @include respond-to(md) {
     font-size: 14px;
