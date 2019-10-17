@@ -26,7 +26,7 @@ $('.main-banner__content').slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false,
+        dots: true,
         autoplay: true,
         arrows: false,
         autoplaySpeed: 1000
