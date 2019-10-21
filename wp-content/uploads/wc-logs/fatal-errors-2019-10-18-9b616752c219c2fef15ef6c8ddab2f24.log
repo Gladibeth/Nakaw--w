@@ -1,0 +1,17 @@
+2019-10-18T16:49:34+00:00 CRITICAL Uncaught Error: Call to undefined function the_field() in /var/www/html/Nakawé-w/wp-content/themes/Nakawé-w/woocommerce/content-single-product.php:59
+Stack trace:
+#0 /var/www/html/Nakawé-w/wp-includes/template.php(724): require()
+#1 /var/www/html/Nakawé-w/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/N...', false)
+#2 /var/www/html/Nakawé-w/wp-content/themes/Nakawé-w/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Nakawé-w/wp-includes/template-loader.php(78): include('/var/www/html/N...')
+#4 /var/www/html/Nakawé-w/wp-blog-header.php(19): require_once('/var/www/html/N...')
+#5 /var/www/html/Nakawé-w/index.php(17): require('/var/www/html/N...')
+#6 {main}
+  thrown in /var/www/html/Nakawé-w/wp-content/themes/Nakawé-w/woocommerce/content-single-product.php on line 59
+
+2019-10-18T16:57:40+00:00 CRITICAL syntax error, unexpected '?' in /var/www/html/Nakawé-w/wp-content/themes/Nakawé-w/woocommerce/archive-product.php on line 81
+
+2019-10-18T19:06:12+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /var/www/html/Nakawé-w/wp-includes/class-wp-list-util.php on line 104
+
+2019-10-18T19:34:08+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in /var/www/html/Nakawé-w/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php on line 159
+
